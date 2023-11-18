@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "services:up": "docker-compose up -d",
+    "db:migrate-up": "dbmate up",
+    "db:migrate-down": "dbmate down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/server": "^10.43.6",
+    "postgres": "^3.4.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "dbmate": "^2.8.0",
+    "typescript": "^5.2.2"
+  }
+}
