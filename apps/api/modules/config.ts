@@ -1,0 +1,7 @@
+export const config = {
+  DATABASE_URL: process.env.DATABASE_URL,
+  POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+  POSTGRES_USERNAME: process.env.POSTGRES_USERNAME,
+  POSTGRES_DATABASE: process.env.POSTGRES_DATABASE,
+  APP_PORT: process.env.APP_PORT,
+};

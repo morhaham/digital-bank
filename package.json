@@ -1,12 +1,20 @@
 {
-  "name": "simple-bank",
+  "name": "digital-bank",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "services:dev": "docker-compose -f docker-compose.dev.yaml down && docker-compose -f docker-compose.dev.yaml up --build",
+    "services:prod": "docker-compose -f docker-compose.yaml down && docker-compose -f docker-compose.yaml up --build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.3"
+  }
 }

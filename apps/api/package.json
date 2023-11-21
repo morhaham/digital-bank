@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "tsc-watch --onSuccess \"node ./dist/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "services:up": "docker-compose up -d",
     "db:migrate-up": "dbmate up",
     "db:migrate-down": "dbmate down"
   },
@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "dbmate": "^2.8.0",
+    "jest": "^29.7.0",
+    "tsc-watch": "^6.0.4",
     "typescript": "^5.2.2"
   }
 }
