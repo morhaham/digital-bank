@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "services:dev": "docker-compose -f docker-compose.dev.yaml down && docker-compose -f docker-compose.dev.yaml up --build",
     "services:prod": "docker-compose -f docker-compose.yaml down && docker-compose -f docker-compose.yaml up --build",
+    "db:migrate-up": "dbmate up",
+    "db:migrate-down": "dbmate down",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.9.3"
+    "@types/node": "^20.9.3",
+    "dbmate": "^2.8.0"
+  },
+  "engines": {
+    "node": "^20.9.0",
+    "npm": "^10.1.0"
   }
 }

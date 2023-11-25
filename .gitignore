@@ -132,3 +132,6 @@ dist
 
 # docker-compose
 docker-compose.yaml
+
+# postgres data
+.pg-data/

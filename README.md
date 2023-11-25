@@ -20,16 +20,16 @@
 
 - docker client `^20.10.22`
 
-## Installation
+## Local development using docker-compose
 
 1. `pnpm install`
-2. `pnpm services:up`
+2. `pnpm services:dev`
 3. `pnpm db:migrate-up`
 
 ## Database guide
 
 - Use the follwing commands to trace the current running database:
-  - `docker exec -it simple-bank-db-1 bash` (replace `simple-bank-db-1` with the conatiner name)
+  - `docker exec -it digital-bank-db-1 bash` (replace `digital-bank-db-1` with the conatiner name)
   - `cc9fed6203e8:/# psql -U postgres` - connects to the postgres server
   - `postgres=# \l` - list all the databases
   - `\postgres=# \c digital_bank` - switch to the desired database
@@ -42,3 +42,14 @@
 --------+---------+-----------+------------+---------
 (0 rows)
 ```
+
+## TODOS
+
+- redesign the db to support cash deposits
+- create the actual api routers and procedures
+- api tests
+- add load balancer
+- create production dockerfile
+- create ui
+- use pnpm workspaces in order to support trpc types in react
+- ssr the initial page load

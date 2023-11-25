@@ -16,9 +16,6 @@ dependencies:
     version: 3.22.4
 
 devDependencies:
-  dbmate:
-    specifier: ^2.8.0
-    version: 2.8.0
   jest:
     specifier: ^29.7.0
     version: 29.7.0
@@ -367,62 +364,6 @@ packages:
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
-
-  /@dbmate/darwin-arm64@2.8.0:
-    resolution: {integrity: sha512-fDVbQktcQP0cAGoAkxanIf9so5EAcq1LVOKTgHc8JR8VczQGNShEbZ/NygCNu296XGW1kjBbj0THeSkoG7EwmQ==}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/darwin-x64@2.8.0:
-    resolution: {integrity: sha512-59KwrTMLw4LJLPk8sSIwHkFqZLz1tUrlhWoNnwv/KyyHykKW11jOdhGn7fVXyR0XLiG7LeCrmwK1KBkstSr3fw==}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/linux-arm64@2.8.0:
-    resolution: {integrity: sha512-Fzp7rwHWa979O3Tv6lYM/hhdt3Rdd3jkGeNbuh8A3UCBCTZsqD5R1Qp14kawNW8v57hVVwQA8hopAgHTjGaCaQ==}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/linux-arm@2.8.0:
-    resolution: {integrity: sha512-s7SEBR9wabYH+txpu8ktR4F2UJ0TxQYyIo7nJJ8tR6j+T32agSTC9tHFhkMehZphybnYXel4EOvmbaIwr0W20g==}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/linux-ia32@2.8.0:
-    resolution: {integrity: sha512-VDa20odQ0pSfMTDkdB7ELznrYiqDR3bjVJNP2VvVnttQLsvve0yE3Y2GaH6mOnnIVPu4RScQoGtzrii6DcszWQ==}
-    cpu: [ia32]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/linux-x64@2.8.0:
-    resolution: {integrity: sha512-6Q/gfhaRLsnMNaR9YHsi/VdB571ENfF3dv0xVNnZEEfagZaeZDIlnSu4bzee/GTjynqXwUD6sE4MG7bIBRbFqg==}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@dbmate/win32-x64@2.8.0:
-    resolution: {integrity: sha512-VmcKgYq1wNuOVTx4SrBiiqGAxv+LTWK8a5Bss2FXPq4Kwo+kn6d+K/j9tEhs60SfcwtWE0KXfYALQxw1ORlVvw==}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /@istanbuljs/load-nyc-config@1.1.0:
     resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}
@@ -1055,19 +996,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: true
-
-  /dbmate@2.8.0:
-    resolution: {integrity: sha512-mXPWCcl/rbQjXBQWdw/KeysKGJ9bMVFweSIEwp2owuw+5jp3ohw0S7nNgWiFvhLhGfdixgTxb82/EQ0zcUj57A==}
-    hasBin: true
-    optionalDependencies:
-      '@dbmate/darwin-arm64': 2.8.0
-      '@dbmate/darwin-x64': 2.8.0
-      '@dbmate/linux-arm': 2.8.0
-      '@dbmate/linux-arm64': 2.8.0
-      '@dbmate/linux-ia32': 2.8.0
-      '@dbmate/linux-x64': 2.8.0
-      '@dbmate/win32-x64': 2.8.0
     dev: true
 
   /debug@4.3.4:
